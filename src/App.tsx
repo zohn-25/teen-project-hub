@@ -8,6 +8,8 @@ import HowItWorks from "./pages/HowItWorks";
 import Opportunities from "./pages/Opportunities";
 import ForCompanies from "./pages/ForCompanies";
 import Login from "./pages/Login";
+import TeenLogin from "./pages/TeenLogin";
+import CompanyLogin from "./pages/CompanyLogin";
 import Signup from "./pages/Signup";
 import NotFound from "./pages/NotFound";
 
@@ -25,6 +27,8 @@ const App = () => (
           <Route path="/opportunities" element={<Opportunities />} />
           <Route path="/for-companies" element={<ForCompanies />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/login/teen" element={<TeenLogin />} />
+          <Route path="/login/company" element={<CompanyLogin />} />
           <Route path="/signup" element={<Signup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
